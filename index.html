@@ -141,7 +141,29 @@ Se aumento un poco el nivel de programacion, se realizaban ejercicios todas las 
  </td>
  </tr>
  
- </table>
+ </table
+   <form  enctype="" action="datos.php" method="POST" autocomplete="ON" >
+
+<label for="nombre">Nombre: </label>
+<input type="Text" name="nombre" placeholder="Escriba el nombre de la persona" id="nombre">	
+<br>
+<label for="asunto">Asunto: </label>
+<input type="Text" name="asunto" placeholder="Escriba el asunto " id="asunto">
+<br>
+<label for="email">Email: </label>
+<input type="email" name="email" id="email" placeholder="Escriba el Email del usuario">
+<br>
+<label for="mensaje">Mensaje: </label>
+<textarea name="mensaje" id="mensaje" placeholder="Escriba el mensaje por el cual desea contactarnos"></textarea>
+
+
+<br>
+<input type="submit" name="enviar" placeholder="Enviar">
+</form>
+
+<?php
+include("datos.php");
+?>
   
 </body>
 
